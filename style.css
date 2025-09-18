@@ -1,0 +1,18 @@
+:root{--card:#ffffff;--bg:#f3f6fb;--accent:#2563eb}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial}
+body{display:grid;place-items:center;background:linear-gradient(180deg,#eef6ff,#f7fbff)}
+.card{width:360px;background:var(--card);box-shadow:0 8px 30px rgba(30,45,80,0.06);border-radius:12px;padding:22px}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tab{flex:1;padding:8px 10px;text-align:center;border-radius:8px;cursor:pointer}
+.tab.active{background:var(--accent);color:white}
+form{display:grid;gap:10px}
+input[type=text],input[type=password],input[type=email]{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf6}
+.row{display:flex;gap:8px}
+button{padding:10px;border-radius:8px;border:0;background:var(--accent);color:white;cursor:pointer}
+.muted{font-size:13px;color:#6b7280}
+.google-wrap{display:flex;justify-content:center;margin-top:8px}
+.small{font-size:13px}
+.or{display:flex;align-items:center;gap:8px;margin:10px 0;color:#9aa7c7}
+.or:before,.or:after{content:"";flex:1;height:1px;background:#e6edf6;border-radius:2px}
+#profile{display:none;margin-top:12px;padding:8px;border-radius:8px;background:#f8fafc}
+#profile img{width:42px;height:42px;border-radius:50%;vertical-align:middle;margin-right:8px}

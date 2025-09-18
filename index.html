@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login / Signup with Firebase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="tabs">
+      <div id="tab-signin" class="tab active">Sign in</div>
+      <div id="tab-signup" class="tab">Create account</div>
+    </div>
+
+    <!-- Sign In -->
+    <form id="signin-form">
+      <input id="signin-email" type="email" placeholder="Email" required />
+      <input id="signin-pass" type="password" placeholder="Password" required />
+      <div class="row">
+        <button type="submit">Sign in</button>
+        <button type="button" id="signout-btn" style="display:none;background:#ef4444">
+          Sign out
+        </button>
+      </div>
+      <div class="or">OR</div>
+      <div class="google-wrap">
+        <button type="button" id="google-login">Sign in with Google</button>
+      </div>
+    </form>
+
+    <!-- Sign Up -->
+    <form id="signup-form" style="display:none">
+      <input id="signup-name" type="text" placeholder="Full name" required />
+      <input id="signup-email" type="email" placeholder="Email" required />
+      <input id="signup-pass" type="password" placeholder="Password" required />
+      <div class="row">
+        <button type="submit">Create account</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
